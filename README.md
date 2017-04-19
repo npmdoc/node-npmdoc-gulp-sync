@@ -1,9 +1,14 @@
-# api documentation for  [gulp-sync (v0.1.4)](https://github.com/kaminaly/gulp-sync)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-sync.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-sync) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-sync.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-sync)
+# npmdoc-gulp-sync
+
+#### api documentation for  [gulp-sync (v0.1.4)](https://github.com/kaminaly/gulp-sync)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-sync.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-sync) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-sync.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-sync)
+
 #### sync for dependency tasks of gulp.task method
 
-[![NPM](https://nodei.co/npm/gulp-sync.png?downloads=true)](https://www.npmjs.com/package/gulp-sync)
+[![NPM](https://nodei.co/npm/gulp-sync.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-sync)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-sync/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-sync_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-sync/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-sync/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-sync/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-sync/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-sync/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-sync/build/screenCapture.npmPackageListing.svg)
 
@@ -49,13 +54,11 @@
     "main": "./lib/index.js",
     "maintainers": [
         {
-            "name": "kaminaly",
-            "email": "yasutomo@shiftbrain.co.jp"
+            "name": "kaminaly"
         }
     ],
     "name": "gulp-sync",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/kaminaly/gulp-sync.git"
@@ -66,16 +69,6 @@
     "version": "0.1.4"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-sync](#apidoc.module.gulp-sync)
-
-
-
-# <a name="apidoc.module.gulp-sync"></a>[module gulp-sync](#apidoc.module.gulp-sync)
 
 
 
