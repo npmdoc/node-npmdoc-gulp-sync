@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/kaminaly/gulp-sync"
-
-    >gulp-sync (v0.1.4)</a>
+    <a href="https://github.com/kaminaly/gulp-sync">gulp-sync (v0.1.4)</a>
 </h1>
 <h4>sync for dependency tasks of gulp.task method</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-sync">module gulp-sync</a><ol>
 
@@ -90,17 +83,17 @@
   async = function(tasks, prefix) {
     var result, syncCount, task, _i, _len;
     if (prefix == null) {
-      prefix = &#x27;sync group&#x27;;
+      prefix = 'sync group';
     }
-    if (prefix === &#x27;sync group&#x27;) {
+    if (prefix === 'sync group') {
       prefix += groupCount++;
     }
     result = [];
     syncCount = 0;
-    for (_i = 0, _len = tasks.length; _i &#x3c; _len; _i++) {
+    for (_i = 0, _len = tasks.length; _i &lt; _len; _i++) {
       task = tasks[_i];
       if (Array.isArray(task)) {
-        task = sync(task, prefix + &#x27;:&#x27; + syncCount)[0];
+        task = sync(task, prefix + ':' + syncCount)[0];
         syncCount++;
       }
       result.push(task);
@@ -110,9 +103,9 @@
   sync = function(tasks, prefix) {
     var deps, index, task, taskName, _fn, _i, _len;
     if (prefix == null) {
-      prefix = &#x27;sync group&#x27;;
+      prefix = 'sync group';
     }
-    if (prefix === &#x27;sync group&#x27;) {
+    if (prefix === 'sync group') {
       prefix += groupCount++;
     }
     deps = [];
@@ -120,12 +113,12 @@
       return gulp.task(taskName, deps, function(cb) {
         var check, onStop;
         check = task.concat();
-        gulp.addListener(&#x27;task_stop&#x27;, onStop = function(e) {
+        gulp.addListener('task_stop', onStop = function(e) {
           var i;
           if (-1 !== (i = check.indexOf(e.task))) {
             check.splice(i, 1);
             if (check.length === 0) {
-              gulp.removeListener(&#x27;task_stop&#x27;, onStop);
+              gulp.removeListener('task_stop', onStop);
               return cb();
             }
           }
@@ -133,9 +126,9 @@
         return gulp.start.apply(gulp, task);
       });
     };
-    for (index = _i = 0, _len = tasks.length; _i &#x3c; _len; index = ++_i) {
+    for (index = _i = 0, _len = tasks.length; _i &lt; _len; index = ++_i) {
       task = tasks[index];
-      taskName = prefix + &#x27;:&#x27; + index;
+      taskName = prefix + ':' + index;
       if (Array.isArray(task)) {
         task = async(task, taskName);
       } else {
@@ -163,3 +156,4 @@
     ]
 </div>
 </div>
+</body></html>
